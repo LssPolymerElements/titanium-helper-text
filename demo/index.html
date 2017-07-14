@@ -1,0 +1,43 @@
+<html>
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1, user-scalable=yes">
+
+  <title>Titanium Helper Text Demo</title>
+  <script src="../../webcomponentsjs/webcomponents-lite.js"></script>
+
+  <link rel="import" href="../../iron-demo-helpers/demo-pages-shared-styles.html">
+  <link rel="import" href="../../iron-demo-helpers/demo-snippet.html">
+  <link rel="import" href="../../paper-input/paper-input.html">
+
+  <link rel="import" href="../titanium-helper-text.html">
+  <link rel="import" href="my-icons.html">
+
+  <custom-style>
+    <style is="custom-style" include="demo-pages-shared-styles">
+      titanium-helper-text {
+        @apply --layout-flex
+      }
+    </style>
+  </custom-style>
+
+</head>
+
+<body unresolved>
+  <div class="vertical-section-container centered">
+
+    <h3>Demo with paper-input</h3>
+    <demo-snippet class="centered-demo">
+      <template>
+        <titanium-helper-text icon="my-icons:help-outline" text="This is helper text to help users understand what ">
+          <paper-input class="test" id="slot"></paper-input>
+        </titanium-helper-text>
+      </template>
+    </demo-snippet>
+  </div>
+</body>
+
+</html>
