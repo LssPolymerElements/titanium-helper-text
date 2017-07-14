@@ -1,0 +1,36 @@
+{
+  "name": "titanium-helper-text",
+  "version": "2.0.0",
+  "keywords": [
+    "polymer 2",
+    "leavitt software",
+    "icon input"
+  ],
+  "authors": [
+    "Leavitt Software Solutions"
+  ],
+  "main": "titanium-helper-text.html",
+  "description": "`titanium-helper-text` adds helper text to an input or component. This component is written for Polymer 2.",
+  "license": "MIT",
+  "ignore": [
+    "node_modules",
+    "bower_components",
+    "package.json",
+    "tsconfig.json",
+    ".gitignore",
+    ".vscode"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#^2.0.0",
+    "polymer2-ts": "^1.0.0",
+    "iron-collapse": "^2.0.0",
+    "paper-icon-button": "^2.0.0"
+  },
+  "devDependencies": {
+    "webcomponentsjs": "webcomponents/webcomponentsjs#^1.0.0",
+    "iron-demo-helpers": "PolymerElements/iron-demo-helpers#^2.0.0",
+    "iron-icon": "^2.0.0",
+    "iron-iconset-svg": "^2.0.1",
+    "paper-input": "^2.0.1"
+  }
+}
