@@ -18,8 +18,11 @@
 
   <custom-style>
     <style is="custom-style" include="demo-pages-shared-styles">
-      titanium-helper-text {
-        @apply --layout-flex
+      titanium-helper-text,
+      paper-input {
+        -ms-flex: 1 1 auto;
+        -webkit-flex: 1 1 auto;
+        flex: 1 1 auto;
       }
     </style>
   </custom-style>
@@ -32,7 +35,7 @@
     <h3>Demo with paper-input</h3>
     <demo-snippet class="centered-demo">
       <template>
-        <titanium-helper-text icon="my-icons:help-outline" text="This is helper text to help users understand what ">
+        <titanium-helper-text icon="my-icons:help-outline" text="This is helper text to help users understand what">
           <paper-input class="test" id="slot"></paper-input>
         </titanium-helper-text>
       </template>

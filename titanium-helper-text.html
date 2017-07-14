@@ -3,22 +3,30 @@
 
 <link rel="import" href="../iron-collapse/iron-collapse.html">
 <link rel="import" href="../paper-icon-button/paper-icon-button.html">
-<link rel="import" href="../iron-flex-layout/iron-flex-layout.html">
 
 <dom-module id="titanium-helper-text">
   <template strip-whitespace>
     <style>
       .slot-container {
-        @apply --layout-horizontal;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -ms-flex-direction: row;
+        -webkit-flex-direction: row;
+        flex-direction: row;
       }
 
        ::slotted(.test) {
-        @apply --layout-flex-2;
+        -ms-flex: 2;
+        -webkit-flex: 2;
+        flex: 2;
       }
 
       paper-icon-button {
         color: grey;
-        @apply --layout-self-center;
+        -ms-align-self: center;
+        -webkit-align-self: center;
+        align-self: center;
         padding-left: 8px;
         @apply --titanium-helper-text-icon-button;
       }
@@ -28,8 +36,6 @@
         margin-left: 8px;
         margin-right: 16px;
       }
-
-
 
       .text {
         color: var(--app-primary-color);
