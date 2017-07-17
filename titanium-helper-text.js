@@ -27,7 +27,7 @@ __decorate([
     __metadata("design:type", String)
 ], TitaniumHelperText.prototype, "icon", void 0);
 __decorate([
-    listen('tap'),
+    listen('tap', 'button'),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", []),
     __metadata("design:returntype", void 0)

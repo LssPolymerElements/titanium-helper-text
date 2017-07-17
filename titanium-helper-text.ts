@@ -7,7 +7,7 @@ class TitaniumHelperText extends Polymer.Element {
     @property()
     icon: string;
 
-    @listen('tap')
+    @listen('tap', 'button')
     toggleHelperText() {
         this.$.collapse.toggle();
     }
