@@ -15,8 +15,8 @@ class TitaniumHelperText extends Polymer.Element {
     @computed('iconStyle')
     _computerIconStyle(text: string): string {
         if (text) {
-            return 'visibility: visible';
+            return 'visibility: visible;';
         }
-        return 'visibility: hidden';
+        return 'visibility: hidden;';
     }
 }

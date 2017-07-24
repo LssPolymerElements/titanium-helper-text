@@ -13,9 +13,9 @@ let TitaniumHelperText = class TitaniumHelperText extends Polymer.Element {
     }
     _computerIconStyle(text) {
         if (text) {
-            return 'visibility: visible';
+            return 'visibility: visible;';
         }
-        return 'visibility: hidden';
+        return 'visibility: hidden;';
     }
 };
 __decorate([

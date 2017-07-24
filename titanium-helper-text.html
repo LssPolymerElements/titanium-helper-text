@@ -3,35 +3,31 @@
 
 <link rel="import" href="../iron-collapse/iron-collapse.html">
 <link rel="import" href="../paper-icon-button/paper-icon-button.html">
+<link rel="import" href="../paper-styles/paper-styles.html">
 
 <dom-module id="titanium-helper-text">
   <template strip-whitespace>
     <style>
-      .slot-container {
-        display: -ms-flexbox;
-        display: -webkit-flex;
-        display: flex;
-        -ms-flex-direction: row;
-        -webkit-flex-direction: row;
-        flex-direction: row;
+       :host {
+        @apply --layout-vertical;
       }
 
-       ::slotted(.test) {
-        -ms-flex: 2;
-        -webkit-flex: 2;
-        flex: 2;
+      .slot-container {
+        @apply --layout-horizontal;
+      }
+
+       ::slotted(*) {
+        @apply --layout-flex-2;
       }
 
       paper-icon-button {
         color: grey;
-        -ms-align-self: center;
-        -webkit-align-self: center;
-        align-self: center;
-        padding-left: 8px;
+        @apply --layout-self-end;
         @apply --titanium-helper-text-icon-button;
       }
 
       iron-collapse {
+        @apply --layout-flex-2;
         margin-top: 16px;
         margin-left: 8px;
         margin-right: 16px;
@@ -45,7 +41,7 @@
 
     <div class="slot-container">
       <slot></slot>
-      <paper-icon-button id="button" tabindex="-1" style$="[[iconStyle]];" icon="[[icon]]"></paper-icon-button>
+      <paper-icon-button id="button" tabindex="-1" style$="[[iconStyle]]" icon="[[icon]]"></paper-icon-button>
     </div>
     <iron-collapse id="collapse">
       <div class="text">[[text]]</div>
