@@ -8,6 +8,7 @@
 
   <title>Titanium Helper Text Demo</title>
   <script src="../../webcomponentsjs/webcomponents-lite.js"></script>
+  <script src="../../reflect-metadata/Reflect.js"></script>
 
   <link rel="import" href="../../iron-demo-helpers/demo-pages-shared-styles.html">
   <link rel="import" href="../../iron-demo-helpers/demo-snippet.html">
@@ -34,6 +35,9 @@
       <template>
         <titanium-helper-text icon="icons:help-outline" text="This is helper text to help users understand what">
           <paper-input label="Your Name"></paper-input>
+        </titanium-helper-text>
+        <titanium-helper-text icon="icons:help-outline">
+          <paper-input label="No Helper Text"></paper-input>
         </titanium-helper-text>
       </template>
     </demo-snippet>
