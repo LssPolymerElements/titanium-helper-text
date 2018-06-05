@@ -13,7 +13,6 @@
 
   @Polymer
       .decorators.computed('text') get iconStyle(): string {
-    console.log(this.text);
     if (this.text) {
       return 'visibility: visible;';
     }
