@@ -1,6 +1,6 @@
 {
   "name": "titanium-helper-text",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "keywords": [
     "polymer 2",
     "leavitt software",
@@ -21,11 +21,12 @@
     ".vscode"
   ],
   "dependencies": {
-    "polymer": "Polymer/polymer#^2.0.0",
-    "polymer2-ts": "^1.0.0",
+    "polymer": "Polymer/polymer#^2.4.0",
+    "polymer-decorators": "Polymer/polymer-decorators#^1.0.2",
     "iron-collapse": "^2.0.0",
     "paper-icon-button": "^2.0.0",
-    "paper-styles": "^2.0.0"
+    "paper-styles": "^2.0.0",
+    "reflect-metadata": "rbuckton/reflect-metadata#^0.1.12"
   },
   "devDependencies": {
     "webcomponentsjs": "webcomponents/webcomponentsjs#^1.0.0",

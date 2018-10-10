@@ -1,6 +1,7 @@
 <link rel="import" href="../polymer/polymer.html">
-<link rel="import" href="../polymer2-ts/polymer2-ts.html">
 
+<link rel="import" href="../polymer-decorators/polymer-decorators.html">
+<link rel="import" href="../polymer-decorators/mixins/declarative-event-listeners.html">
 <link rel="import" href="../iron-collapse/iron-collapse.html">
 <link rel="import" href="../paper-icon-button/paper-icon-button.html">
 <link rel="import" href="../paper-styles/paper-styles.html">
@@ -11,6 +12,7 @@
       .slot-container {
         @apply --layout-horizontal;
       }
+
       /* This is a fix for IE and firefox until they enforce ::slotted  */
 
       .slot-content {
@@ -20,12 +22,13 @@
         @apply --layout-horizontal;
       }
 
-       ::slotted(*) {
+      ::slotted(*) {
         @apply --layout-flex-2;
       }
 
       paper-icon-button {
         color: grey;
+        visibility: hidden;
         @apply --layout-self-end;
         @apply --titanium-helper-text-icon-button;
       }
@@ -54,5 +57,5 @@
     </iron-collapse>
 
   </template>
-  <script src="titanium-helper-text.js"></script>
+  <script src="lib/titanium-helper-text.js"></script>
 </dom-module>
