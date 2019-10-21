@@ -6,18 +6,4 @@
 
 To install use: `bower install --save titanium-helper-text`
 
-<!---
-```
-<custom-element-demo>
-  <template is="dom-bind">
-    <script src="../webcomponentsjs/webcomponents-lite.js"></script>
-    <link rel="import" href="demo/index.html">
-    <x-demo></x-demo>
-    <next-code-block></next-code-block>
-  </template>
-</custom-element-demo>
-```
--->
-```html
-
-```
+# This element has been deprecated therefor is no longer is maintained or supported. 
