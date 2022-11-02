@@ -15,7 +15,7 @@
     "bower": "*",
     "browser-sync": "^2.18.2",
     "clang-format": "^1.2.3",
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.2",
     "tslint": "^4.0.2",
     "typescript": "^2.4.1"
   }
